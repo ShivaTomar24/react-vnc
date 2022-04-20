@@ -335,27 +335,27 @@ const VncScreen: React.ForwardRefRenderFunction<VncScreenHandle, Props> = (props
     }, []);
 
     const handleClick = () => {
-        const rfb = getRfb();
-        if (!rfb) return;
+//         const rfb = getRfb();
+//         if (!rfb) return;
 
-        rfb.focus();
+//         rfb.focus();
     };
 
     const handleMouseEnter = () => {
-        if (document.activeElement && document.activeElement instanceof HTMLElement) {
-            document.activeElement.blur();
-        }
+//         if (document.activeElement && document.activeElement instanceof HTMLElement) {
+//             document.activeElement.blur();
+//         }
 
-        handleClick();
+//         handleClick();
     };
 
     const handleMouseLeave = () => {
-        const rfb = getRfb();
-        if (!rfb) {
-            return;
-        }
+//         const rfb = getRfb();
+//         if (!rfb) {
+//             return;
+//         }
 
-        rfb.blur();
+//         rfb.blur();
     };
 
     return (
